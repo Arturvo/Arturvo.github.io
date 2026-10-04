@@ -1,0 +1,123 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<title>Gas Station Simulator - RV Camp DLC</title>
+		<meta charset="utf-8" />
+		<link rel="icon" type="image/svg+xml" href="../images/logo.svg" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="../assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="../assets/css/noscript.css" /></noscript>
+	</head>
+	<body class="is-preload game-detail">
+		<a class="home-link" href="../index.html" aria-label="Home" title="Home"><span class="icon solid fa-home" aria-hidden="true"></span></a>
+			<div id="wrapper">
+					<header id="header">
+						<div class="inner">
+								<nav class="profile-nav" aria-label="Contact and social links">
+									<ul>
+
+										<li><button type="button" id="contact-toggle" aria-label="Contact" title="Contact" aria-expanded="false" aria-controls="contact-dropdown"><span class="icon solid fa-envelope" aria-hidden="true"></span></button></li>
+										<li><a href="https://www.linkedin.com/in/artur-chrząstowski/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn" title="LinkedIn"><span class="icon brands fa-linkedin-in" aria-hidden="true"></span></a></li>
+										<li><a href="https://github.com/Arturvo" target="_blank" rel="noopener noreferrer" aria-label="GitHub" title="GitHub"><span class="icon brands fa-github" aria-hidden="true"></span></a></li>
+									</ul>
+									<div id="contact-dropdown" hidden>
+										<p class="contact-title">Contact Email:</p>
+										<div class="contact-email-row">
+											<span id="contact-email">artur.chrzast@gmail.com</span>
+											<button type="button" id="copy-email" aria-label="Copy email address" title="Copy email address"><span class="icon solid fa-copy" aria-hidden="true"></span></button>
+										</div>
+										<p id="copy-status" role="status" aria-live="polite"></p>
+									</div>
+								</nav>
+
+						</div>
+					</header>
+
+
+				<main id="main">
+					<div class="inner">
+						<header class="game-detail-header">
+							<div class="game-card-image">
+										<img src="../images/RVCamp.jpg" alt="Gas Station Simulator - RV Camp DLC" />
+										<a class="game-card-icon" href="https://store.steampowered.com/app/3543920/Gas_Station_Simulator__RV_Camp_DLC/" target="_blank" rel="noopener noreferrer" aria-label="Gas Station Simulator - RV Camp DLC on Steam" title="View on Steam"><span class="icon brands fa-steam" aria-hidden="true"></span></a>
+									</div>
+							<div class="game-detail-heading">
+								<p class="game-card-studio">Drago Entertainment</p>
+								<h1>Gas Station Simulator - RV Camp DLC</h1>
+								<div class="game-description">
+									<p><strong>RV Camp</strong> is a DLC for <em>Gas Station Simulator</em> that introduces campground management. Players rent pitches to travellers, complete minigames to help guests pass the time, and expand the campsite while helping Ruby develop the resort.</p>
+								</div>
+							</div>
+						</header>
+						<section class="game-contributions" aria-labelledby="contributions-title">
+							<h2 id="contributions-title">My Contributions</h2>
+							<p><strong>RV Camp DLC</strong> was my first project as a team lead. I established the DLC's structure and built its core systems on top of the existing base game. My role combined hands-on programming with team leadership, with a particular focus on the underlying systems that tied the experience together, particularly camper booking and lifecycle. I was also responsible for managing the project's build pipeline and version control.</p>
+							<p>Below are the key features and areas I was responsible for:</p>
+							<div class="contribution-categories">
+								<section class="contribution-category" aria-labelledby="project-management-title">
+									<div class="contribution-text">
+										<h3 id="project-management-title">Project Management</h3>
+										<ul class="contribution-list">
+											<li>Managed the build pipeline using Perforce and Jenkins to keep builds reliable and support smooth transitions between products and configurations.</li>
+											<li>Managed version control in Perforce across multiple departments, keeping branches consistent and coordinating changes to minimise conflicts.</li>
+											<li>Coordinated programming work with QA to ensure the intended changes were included in builds submitted for testing and releases.</li>
+										</ul>
+									</div>
+									<img class="contribution-image" src="../images/RoadHouse_Diagram1.jpg" alt="Roadhouse Simulator project management diagram" loading="lazy" />
+								</section>
+								<section class="contribution-category" aria-labelledby="rv-lifecycle-title">
+									<div class="contribution-text">
+										<h3 id="rv-lifecycle-title">RV Driving and Life Cycle</h3>
+										<ul class="contribution-list">
+											<li>Developed a vehicle life cycle system covering spawning, driving to camp spots, and despawning, with a state machine to manage transitions between states.</li>
+											<li>Implemented camp spots that players can rename and unlock as they progress through the game.</li>
+										</ul>
+									</div>
+									<img class="contribution-image" src="../images/RVCamp_Screenshot1.jpg" alt="RV Camp DLC vehicle driving and camp spots" loading="lazy" />
+								</section>
+								<section class="contribution-category" aria-labelledby="rv-booking-title">
+									<div class="contribution-text">
+										<h3 id="rv-booking-title">RV Booking</h3>
+										<ul class="contribution-list">
+											<li>Developed a system for booking and managing guests.</li>
+											<li>Implemented multiple guest types with distinct requirements and life cycles, with easily accessible settings for designers.</li>
+											<li>Implemented a complex economy system that provides different rewards based on guest types and the conditions of their stay.</li>
+											<li>Implemented the complete user interface from a design mockup.</li>
+										</ul>
+									</div>
+									<img class="contribution-image" src="../images/RVCamp_Screenshot2.jpg" alt="RV Camp DLC guest booking interface" loading="lazy" />
+								</section>
+								<section class="contribution-category" aria-labelledby="game-progression-title">
+									<div class="contribution-text">
+										<h3 id="game-progression-title">Game Progression System</h3>
+										<ul class="contribution-list">
+											<li>Implemented an upgrade system that lets players spend currency to unlock new content and advance the quest line.</li>
+											<li>Collaborated with the team to adapt other DLC systems to work with the upgrade system.</li>
+											<li>Implemented the complete user interface from a design mockup.</li>
+										</ul>
+									</div>
+									<img class="contribution-image" src="../images/RVCamp_Screenshot3.jpg" alt="RV Camp DLC upgrade and progression interface" loading="lazy" />
+								</section>
+								<section class="contribution-category" aria-labelledby="employee-system-title">
+									<div class="contribution-text">
+										<h3 id="employee-system-title">Employee System</h3>
+										<ul class="contribution-list">
+											<li>Implemented a system for assigning and managing RV Camp employees, including their associated costs and rewards.</li>
+											<li>Implemented employee NPCs that perform tasks at their assigned workstations.</li>
+											<li>Implemented the complete user interface from a design mockup.</li>
+										</ul>
+									</div>
+									<img class="contribution-image" src="../images/RVCamp_Screenshot4.jpg" alt="RV Camp DLC employee system" loading="lazy" />
+								</section>
+							</div>
+						</section>
+					</div>
+				</main>
+			</div>
+		<script src="../assets/js/jquery.min.js"></script>
+		<script src="../assets/js/browser.min.js"></script>
+		<script src="../assets/js/breakpoints.min.js"></script>
+		<script src="../assets/js/util.js"></script>
+		<script src="../assets/js/main.js"></script>
+	</body>
+</html>

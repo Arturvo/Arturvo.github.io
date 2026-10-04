@@ -1,0 +1,103 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<title>Gas Station Simulator - Car Junkyard DLC</title>
+		<meta charset="utf-8" />
+		<link rel="icon" type="image/svg+xml" href="../images/logo.svg" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="../assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="../assets/css/noscript.css" /></noscript>
+	</head>
+	<body class="is-preload game-detail">
+		<a class="home-link" href="../index.html" aria-label="Home" title="Home"><span class="icon solid fa-home" aria-hidden="true"></span></a>
+			<div id="wrapper">
+					<header id="header">
+						<div class="inner">
+								<nav class="profile-nav" aria-label="Contact and social links">
+									<ul>
+
+										<li><button type="button" id="contact-toggle" aria-label="Contact" title="Contact" aria-expanded="false" aria-controls="contact-dropdown"><span class="icon solid fa-envelope" aria-hidden="true"></span></button></li>
+										<li><a href="https://www.linkedin.com/in/artur-chrząstowski/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn" title="LinkedIn"><span class="icon brands fa-linkedin-in" aria-hidden="true"></span></a></li>
+										<li><a href="https://github.com/Arturvo" target="_blank" rel="noopener noreferrer" aria-label="GitHub" title="GitHub"><span class="icon brands fa-github" aria-hidden="true"></span></a></li>
+									</ul>
+									<div id="contact-dropdown" hidden>
+										<p class="contact-title">Contact Email:</p>
+										<div class="contact-email-row">
+											<span id="contact-email">artur.chrzast@gmail.com</span>
+											<button type="button" id="copy-email" aria-label="Copy email address" title="Copy email address"><span class="icon solid fa-copy" aria-hidden="true"></span></button>
+										</div>
+										<p id="copy-status" role="status" aria-live="polite"></p>
+									</div>
+								</nav>
+
+						</div>
+					</header>
+
+
+				<main id="main">
+					<div class="inner">
+						<header class="game-detail-header">
+							<div class="game-card-image">
+										<img src="../images/Junkyard.jpg" alt="Gas Station Simulator - Car Junkyard DLC" />
+										<a class="game-card-icon" href="https://store.steampowered.com/app/2782920/Gas_Station_Simulator__Car_Junkyard_DLC/" target="_blank" rel="noopener noreferrer" aria-label="Gas Station Simulator - Car Junkyard DLC on Steam" title="View on Steam"><span class="icon brands fa-steam" aria-hidden="true"></span></a>
+									</div>
+							<div class="game-detail-heading">
+								<p class="game-card-studio">Drago Entertainment</p>
+								<h1>Gas Station Simulator - Car Junkyard DLC</h1>
+								<div class="game-description">
+									<p><strong>Car Junkyard</strong> is a DLC for <em>Gas Station Simulator</em> that expands the player's business with a new set of automotive services. Players work with Sean, a muscle car enthusiast whose business is struggling financially, to develop the junkyard into a destination for car enthusiasts.</p>
+								</div>
+							</div>
+						</header>
+						<section class="game-contributions" aria-labelledby="contributions-title">
+							<h2 id="contributions-title">My Contributions</h2>
+							<p>Car Junkyard DLC was the second major project I worked on at Drago Entertainment. I took on more complex tasks and ownership of major features, focusing primarily on the AI for the DLC's main story NPC and the physics-based magnetic crane used to process car wrecks. I was also responsible for implementing most of the quest line.</p>
+							<p>Below are the key features and areas I was responsible for:</p>
+							<div class="contribution-categories">
+								<section class="contribution-category" aria-labelledby="magnet-crane-title">
+									<div class="contribution-text">
+										<h3 id="magnet-crane-title">Magnet Crane</h3>
+										<ul class="contribution-list">
+											<li>Developed a physics-based magnet crane minigame that lets players reposition and process car wrecks.</li>
+											<li>Balanced unpredictable physics interactions with the need to bring all elements into correct, deterministic final states.</li>
+											<li>Adapted the crane asset created by the animation team to respond to player input and incorporate physics-based animation.</li>
+											<li>Developed an AI controller that enables NPCs to operate the crane.</li>
+										</ul>
+									</div>
+									<img class="contribution-image" src="../images/Junkyard_Gif1.gif" alt="Car Junkyard DLC magnet crane processing car wrecks" loading="lazy" />
+								</section>
+								<section class="contribution-category" aria-labelledby="sean-title">
+									<div class="contribution-text">
+										<h3 id="sean-title">Sean - Story Character</h3>
+										<ul class="contribution-list">
+											<li>Adapted the existing story character AI system to support Sean's dual role as a story character and junkyard employee.</li>
+											<li>Implemented stuck character recovery to help Sean reach his destination reliably and prevent quest progression issues.</li>
+											<li>Implemented active and idle tasks to keep Sean occupied while ensuring he responds to player commands.</li>
+											<li>Implemented a dynamic bark system that ensures Sean always has something interesting to say.</li>
+										</ul>
+									</div>
+									<img class="contribution-image" src="../images/Junkyard_Screenshot1.jpg" alt="Sean, the Car Junkyard DLC story character and employee" loading="lazy" />
+								</section>
+								<section class="contribution-category" aria-labelledby="dlc-questline-title">
+									<div class="contribution-text">
+										<h3 id="dlc-questline-title">DLC Questline</h3>
+										<ul class="contribution-list">
+											<li>Took over a rough questline outline and rebuilt most quests from scratch to handle edge cases and unexpected player actions.</li>
+											<li>Ensured every quest could be completed regardless of the player's base game progress or save file.</li>
+											<li>Ensured saves made at any point in the questline restored the correct quest state when loaded.</li>
+										</ul>
+									</div>
+									<img class="contribution-image" src="../images/Junkyard_Screenshot2.jpg" alt="Car Junkyard DLC questline gameplay" loading="lazy" />
+								</section>
+							</div>
+						</section>
+					</div>
+				</main>
+			</div>
+		<script src="../assets/js/jquery.min.js"></script>
+		<script src="../assets/js/browser.min.js"></script>
+		<script src="../assets/js/breakpoints.min.js"></script>
+		<script src="../assets/js/util.js"></script>
+		<script src="../assets/js/main.js"></script>
+	</body>
+</html>

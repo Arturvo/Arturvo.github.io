@@ -1,0 +1,119 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<title>Roadhouse Simulator</title>
+		<meta charset="utf-8" />
+		<link rel="icon" type="image/svg+xml" href="../images/logo.svg" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="../assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="../assets/css/noscript.css" /></noscript>
+	</head>
+	<body class="is-preload game-detail">
+		<a class="home-link" href="../index.html" aria-label="Home" title="Home"><span class="icon solid fa-home" aria-hidden="true"></span></a>
+			<div id="wrapper">
+					<header id="header">
+						<div class="inner">
+								<nav class="profile-nav" aria-label="Contact and social links">
+									<ul>
+
+										<li><button type="button" id="contact-toggle" aria-label="Contact" title="Contact" aria-expanded="false" aria-controls="contact-dropdown"><span class="icon solid fa-envelope" aria-hidden="true"></span></button></li>
+										<li><a href="https://www.linkedin.com/in/artur-chrząstowski/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn" title="LinkedIn"><span class="icon brands fa-linkedin-in" aria-hidden="true"></span></a></li>
+										<li><a href="https://github.com/Arturvo" target="_blank" rel="noopener noreferrer" aria-label="GitHub" title="GitHub"><span class="icon brands fa-github" aria-hidden="true"></span></a></li>
+									</ul>
+									<div id="contact-dropdown" hidden>
+										<p class="contact-title">Contact Email:</p>
+										<div class="contact-email-row">
+											<span id="contact-email">artur.chrzast@gmail.com</span>
+											<button type="button" id="copy-email" aria-label="Copy email address" title="Copy email address"><span class="icon solid fa-copy" aria-hidden="true"></span></button>
+										</div>
+										<p id="copy-status" role="status" aria-live="polite"></p>
+									</div>
+								</nav>
+
+						</div>
+					</header>
+
+
+				<main id="main">
+					<div class="inner">
+
+						<header class="game-detail-header">
+							<div class="game-card-image">
+								<img src="../images/RoadHouseSimulator.jpg" alt="Roadhouse Simulator" />
+								<a class="game-card-icon" href="https://store.steampowered.com/app/3565480/Roadhouse_Simulator/" target="_blank" rel="noopener noreferrer" aria-label="Roadhouse Simulator on Steam" title="View on Steam"><span class="icon brands fa-steam" aria-hidden="true"></span></a>
+							</div>
+							<div class="game-detail-heading">
+								<p class="game-card-studio">Drago Entertainment</p>
+								<h1>Roadhouse Simulator</h1>
+								<div class="game-description">
+									<p><strong>Welcome back to Route 66. This story starts a little earlier.</strong></p>
+									<p>Pour beer. Break up brawls. Run pig races. Distill your own liquor. Make deals out back. And when the cops show up, act natural.</p>
+									<p><strong>Roadhouse Simulator</strong> is a standalone prelude to <em>Gas Station Simulator</em>, following Uncle as he takes charge of a rundown roadside bar with more problems than customers — and turns it into the rowdiest stop on the highway.</p>
+								</div>
+							</div>
+						</header>
+						<section class="game-contributions" aria-labelledby="contributions-title">
+							<h2 id="contributions-title">My Contributions</h2>
+							<p><strong>Roadhouse Simulator</strong> was the first standalone project I led from initial setup through launch and post-release support. It gave me hands-on experience across the full development cycle of a AA game: establishing the technical foundations, delivering the prologue and demo, shipping multiple patches, and navigating a busy Steam launch. As a developer, I focused on the core gameplay systems that connected the game as a whole, particularly the AI and game progression.</p>
+							<p>Below are the key features and areas I was responsible for:</p>
+							<div class="contribution-categories">
+								<section class="contribution-category" aria-labelledby="project-management-title">
+									<div class="contribution-text">
+										<h3 id="project-management-title">Project Management</h3>
+										<ul class="contribution-list">
+											<li>Managed the build pipeline using Perforce and Jenkins to keep builds reliable and support smooth transitions between products and configurations.</li>
+											<li>Managed version control in Perforce across multiple departments, keeping branches consistent and coordinating changes to minimise conflicts.</li>
+											<li>Coordinated programming work with QA to ensure the intended changes were included in builds submitted for testing and releases.</li>
+										</ul>
+									</div>
+									<img class="contribution-image" src="../images/RoadHouse_Diagram1.jpg" alt="Roadhouse Simulator project management diagram" loading="lazy" />
+								</section>
+								<section class="contribution-category" aria-labelledby="ai-system-title">
+									<div class="contribution-text">
+										<h3 id="ai-system-title">AI System</h3>
+										<ul class="contribution-list">
+											<li>Integrated an existing AI plugin from another project and adapted it to the needs of Roadhouse Simulator.</li>
+											<li>Developed a character type system that lets designers and programmers configure distinct behaviours, stats, and life cycles.</li>
+											<li>Implemented a new vehicle traffic system.</li>
+											<li>Built supporting AI systems and libraries for queueing, movement and animation handling, stuck character recovery, fast target object searches and many more.</li>
+										</ul>
+									</div>
+									<img class="contribution-image" src="../images/RoadHouse_Gif1.gif" alt="Roadhouse Simulator gameplay animation accompanying the AI System contributions" loading="lazy" />
+								</section>
+								<section class="contribution-category" aria-labelledby="influence-map-title">
+									<div class="contribution-text">
+										<h3 id="influence-map-title">The Influence Map - Game Progression System</h3>
+										<ul class="contribution-list">
+											<li>Developed a system of unlockable territories with configurable requirements and rewards.</li>
+											<li>Designed a modular system with accessible configuration tools, giving designers full control over the map's content.</li>
+											<li>Coordinated work across art departments to ensure game logic, animations, sound, cinematics, and other visuals worked together seamlessly.</li>
+											<li>Implemented the complete user interface from a design mockup.</li>
+										</ul>
+									</div>
+									<img class="contribution-image" src="../images/RoadHouse_Screenshot1.jpg" alt="Roadhouse Simulator Influence Map progression system" loading="lazy" />
+								</section>
+								<section class="contribution-category" aria-labelledby="employee-system-title">
+									<div class="contribution-text">
+										<h3 id="employee-system-title">Employee System</h3>
+										<ul class="contribution-list">
+											<li>Developed a system that lets players hire employees and assign them to specific roles in the Roadhouse.</li>
+											<li>Decoupled the employee system from AI actors in the world to maintain stability and reliability.</li>
+											<li>Implemented all employee behaviours.</li>
+											<li>Exposed all settings through data tables and data assets, giving designers easy access to every relevant property.</li>
+											<li>Implemented the complete user interface from a design mockup.</li>
+										</ul>
+									</div>
+									<img class="contribution-image" src="../images/RoadHouse_Screenshot2.png" alt="Roadhouse Simulator employee system" loading="lazy" />
+								</section>
+							</div>
+						</section>
+					</div>
+				</main>
+			</div>
+		<script src="../assets/js/jquery.min.js"></script>
+		<script src="../assets/js/browser.min.js"></script>
+		<script src="../assets/js/breakpoints.min.js"></script>
+		<script src="../assets/js/util.js"></script>
+		<script src="../assets/js/main.js"></script>
+	</body>
+</html>

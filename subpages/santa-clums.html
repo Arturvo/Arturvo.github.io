@@ -1,0 +1,128 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<title>Santa Clums</title>
+		<meta charset="utf-8" />
+		<link rel="icon" type="image/svg+xml" href="../images/logo.svg" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="../assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="../assets/css/noscript.css" /></noscript>
+	</head>
+	<body class="is-preload game-detail">
+		<a class="home-link" href="../index.html" aria-label="Home" title="Home"><span class="icon solid fa-home" aria-hidden="true"></span></a>
+			<div id="wrapper">
+					<header id="header">
+						<div class="inner">
+								<nav class="profile-nav" aria-label="Contact and social links">
+									<ul>
+
+										<li><button type="button" id="contact-toggle" aria-label="Contact" title="Contact" aria-expanded="false" aria-controls="contact-dropdown"><span class="icon solid fa-envelope" aria-hidden="true"></span></button></li>
+										<li><a href="https://www.linkedin.com/in/artur-chrząstowski/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn" title="LinkedIn"><span class="icon brands fa-linkedin-in" aria-hidden="true"></span></a></li>
+										<li><a href="https://github.com/Arturvo" target="_blank" rel="noopener noreferrer" aria-label="GitHub" title="GitHub"><span class="icon brands fa-github" aria-hidden="true"></span></a></li>
+									</ul>
+									<div id="contact-dropdown" hidden>
+										<p class="contact-title">Contact Email:</p>
+										<div class="contact-email-row">
+											<span id="contact-email">artur.chrzast@gmail.com</span>
+											<button type="button" id="copy-email" aria-label="Copy email address" title="Copy email address"><span class="icon solid fa-copy" aria-hidden="true"></span></button>
+										</div>
+										<p id="copy-status" role="status" aria-live="polite"></p>
+									</div>
+								</nav>
+
+						</div>
+					</header>
+
+
+				<main id="main">
+					<div class="inner">
+						<header class="game-detail-header">
+							<div class="game-detail-media">
+								<div class="game-card-image">
+									<img src="../images/SantaClums.jpg" alt="Santa Clums" />
+									<span class="game-card-icon" role="img" aria-label="Work in progress" title="Work in progress"><span class="icon solid fa-hammer" aria-hidden="true"></span></span>
+								</div>
+								<p class="development-notice"><strong>Santa Clums</strong> is currently in development and has not yet been published on any platform.</p>
+							</div>
+							<div class="game-detail-heading">
+
+								<h1>Santa Clums</h1>
+								<div class="game-description">
+									<p><strong>Santa Clums</strong> is a 3D top-down action/puzzle game developed from the ground up in Unreal Engine 5. Players take on the role of a particularly clumsy Santa Claus, whose clumsiness significantly affects the controls.</p><p>The core gameplay loop involves finding an optimal way into a building and delivering different types of gifts while avoiding detection by NPCs. Players must also avoid accidentally damaging furniture, which incurs score penalties and alerts residents. Planned leaderboards will let players compete for the fastest completion times and highest scores.</p>
+								</div>
+							</div>
+						</header>
+						<section class="game-contributions" aria-labelledby="contributions-title">
+							<h2 id="contributions-title">Features I am most proud of</h2>
+							<div class="contribution-categories">
+								<section class="contribution-category" aria-labelledby="carrying-balance-title">
+									<div class="contribution-text">
+										<h3 id="carrying-balance-title">Carrying and Balance</h3>
+										<ul class="contribution-list">
+											<li>Implemented a system for interacting with, picking up, and carrying objects with different constraints and properties.</li>
+											<li>Implemented procedural animation using Control Rig to handle complex character movement when carrying heavy items.</li>
+											<li>Implemented a balancing minigame to make carrying heavy items more interesting.</li>
+											<li>Created a complex gameplay and animation state machine to smoothly transition between various states, such as uninterruptible animations and ragdolls.</li>
+										</ul>
+									</div>
+									<img class="contribution-image" src="../images/SantaClums_Gif1.gif" alt="Santa Clums carrying and balance gameplay" loading="lazy" />
+								</section>
+								<section class="contribution-category" aria-labelledby="destruction-title">
+									<div class="contribution-text">
+										<h3 id="destruction-title">Destruction</h3>
+										<ul class="contribution-list">
+											<li>Implemented a system for destroying furniture either by player collision, thrown items or player actions.</li>
+											<li>Created hundreds of unique geometry collections to ensure destructible object variety.</li>
+											<li>Optimized performance by limiting the total number of fragments, with a queue that removes the oldest fragments above the limit.</li>
+										</ul>
+									</div>
+									<img class="contribution-image" src="../images/SantaClums_Gif2.gif" alt="Santa Clums furniture destruction gameplay" loading="lazy" />
+								</section>
+								<section class="contribution-category" aria-labelledby="dynamic-climbing-title">
+									<div class="contribution-text">
+										<h3 id="dynamic-climbing-title">Dynamic Climbing</h3>
+										<ul class="contribution-list">
+											<li>Implemented a system that allows climbing on any valid edge without requiring any level design work.</li>
+											<li>Implemented vaulting through fences and windows, as well as climbing ladders and valid wall decorations.</li>
+											<li>Developed an animation system that selects a valid animation for the required action, with different animations for pulling the character up from various heights and support for Root Motion and Motion Warping.</li>
+										</ul>
+									</div>
+									<img class="contribution-image" src="../images/SantaClums_Gif3.gif" alt="Santa Clums dynamic climbing gameplay" loading="lazy" />
+								</section>
+								<section class="contribution-category" aria-labelledby="responsive-ai-title">
+									<div class="contribution-text">
+										<h3 id="responsive-ai-title">Responsive AI</h3>
+										<ul class="contribution-list">
+											<li>Implemented an AI system based on State Machines and Behaviour Trees.</li>
+											<li>Implemented a system on top of UE5 AI Senses that allows NPCs to detect and react to the player.</li>
+											<li>Configured various AI types and behaviours, allowing NPCs to perform different passive activities, search for and chase the player, and enter different states, such as ragdoll, depending on player actions.</li>
+											<li>Implemented a spline-based vehicle driving system for NPCs arriving from outside the map.</li>
+										</ul>
+									</div>
+									<img class="contribution-image" src="../images/SantaClums_Gif4.gif" alt="Santa Clums responsive AI gameplay" loading="lazy" />
+								</section>
+								<section class="contribution-category" aria-labelledby="advanced-tooling-title">
+									<div class="contribution-text">
+										<h3 id="advanced-tooling-title">Advanced Tooling</h3>
+										<ul class="contribution-list">
+											<li>Created a set of tools to enable and speed up development across various areas of the project.</li>
+											<li>Created tools for building and navigating levels by showing and hiding specific buildings and floors, and manipulating lights.</li>
+											<li>Created tools to simplify system configuration, such as assigning objects to floors and configuring destructibles.</li>
+											<li>Created tools to speed up the asset production pipeline by enabling bulk replacement of meshes, materials, and actors.</li>
+											<li>Created a custom snow generation tool that can cover the entire level with snow, dynamically adjusting to the level surface using UE5 Generated Dynamic Mesh Actor.</li>
+										</ul>
+									</div>
+									<img class="contribution-image" src="../images/SantaClums_Gif5.gif" alt="Santa Clums advanced development tooling" loading="lazy" />
+								</section>
+							</div>
+						</section>
+					</div>
+				</main>
+			</div>
+		<script src="../assets/js/jquery.min.js"></script>
+		<script src="../assets/js/browser.min.js"></script>
+		<script src="../assets/js/breakpoints.min.js"></script>
+		<script src="../assets/js/util.js"></script>
+		<script src="../assets/js/main.js"></script>
+	</body>
+</html>
