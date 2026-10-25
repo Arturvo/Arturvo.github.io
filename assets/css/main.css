@@ -3315,7 +3315,7 @@ input, select, textarea {
 		align-self: start;
 		width: 100%;
 		max-width: 480px;
-		border-radius: 8px;
+		border-radius: 0;
 	}
 
 	.game-description {
@@ -3418,7 +3418,7 @@ input, select, textarea {
 		display: block;
 		width: 100%;
 		height: auto;
-		border-radius: 8px;
+		border-radius: 0;
 	}
 
 	.contribution-category:nth-child(even) .contribution-image {

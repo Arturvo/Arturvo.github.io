@@ -50,10 +50,33 @@
 							</div>
 						</header>
 						<section class="game-contributions" aria-labelledby="contributions-title">
-							<h2 id="contributions-title">Features I am most proud of</h2>
-							<p>More details coming soon.</p>
-
-							<div class="contribution-categories"></div>
+							<h2 id="contributions-title">My Contributions</h2>
+							<p>This project was a three-person effort, with me leading the team. My main responsibilities were the general project setup and the core terrain generation algorithm. I also helped develop and integrate other team members' features, including the height map editor, hydraulic erosion simulation, and environment generation.</p>
+							<p>Below are the key features and areas I was responsible for:</p>
+							<div class="contribution-categories">
+								<section class="contribution-category" aria-labelledby="terrain-generation-title">
+									<div class="contribution-text">
+										<h3 id="terrain-generation-title">Terrain Generation</h3>
+										<ul class="contribution-list">
+											<li>Developed a terrain generation algorithm using a height map and the Marching Cubes algorithm.</li>
+											<li>Added a more complex generation mode using 3D simplex noise.</li>
+											<li>Textured the terrain using simple texture projection and Perlin noise for smoother transitions.</li>
+										</ul>
+									</div>
+									<img class="contribution-image" src="../images/EngineeringThesis_Gif1.gif" alt="Engineering thesis procedural terrain generation" loading="lazy" />
+								</section>
+								<section class="contribution-category" aria-labelledby="other-features-title">
+									<div class="contribution-text">
+										<h3 id="other-features-title">Other Features</h3>
+										<ul class="contribution-list">
+											<li>Adjusted the foliage generation algorithm to adapt correctly to the generated terrain.</li>
+											<li>Translated the height map editor's output into properties of the generated terrain.</li>
+											<li>Assisted with the development of terrain modification tools.</li>
+										</ul>
+									</div>
+									<img class="contribution-image" src="../images/EngineeringThesis_Screenshot1.jpg" alt="Engineering thesis terrain and environment features" loading="lazy" />
+								</section>
+							</div>
 						</section>
 					</div>
 				</main>

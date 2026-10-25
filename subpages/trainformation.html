@@ -51,9 +51,42 @@
 						</header>
 						<section class="game-contributions" aria-labelledby="contributions-title">
 							<h2 id="contributions-title">Features I am most proud of</h2>
-							<p>More details coming soon.</p>
-
-							<div class="contribution-categories"></div>
+							<div class="contribution-categories">
+								<section class="contribution-category" aria-labelledby="solo-steam-release-title">
+									<div class="contribution-text">
+										<h3 id="solo-steam-release-title">Solo Steam Release</h3>
+										<ul class="contribution-list">
+											<li>Created a Steam page from scratch, including the trailer, description, GIFs, and screenshots.</li>
+											<li>Published the game through the complete Steam release process.</li>
+											<li>Implemented Steam achievements.</li>
+										</ul>
+									</div>
+									<img class="contribution-image" src="../images/TrainFormation_Screenshot1.jpg" alt="TrainFormation solo Steam release" loading="lazy" />
+								</section>
+								<section class="contribution-category" aria-labelledby="procedural-terrain-title">
+									<div class="contribution-text">
+										<h3 id="procedural-terrain-title">Procedurally Generated Terrain</h3>
+										<ul class="contribution-list">
+											<li>Developed a system for generating hex-based procedural terrain with dynamic transitions between different hex elevations.</li>
+											<li>Optimized terrain generation using HLSL compute shaders to support real-time generation.</li>
+											<li>Wrote custom vertex and fragment shaders to light the terrain.</li>
+											<li>Implemented procedural texture generation based on designer settings and terrain vertex properties.</li>
+										</ul>
+									</div>
+									<img class="contribution-image" src="../images/TrainFormation_Gif1.gif" alt="TrainFormation procedurally generated hex-based terrain" loading="lazy" />
+								</section>
+								<section class="contribution-category" aria-labelledby="procedural-levels-title">
+									<div class="contribution-text">
+										<h3 id="procedural-levels-title">Procedurally Generated Levels</h3>
+										<ul class="contribution-list">
+											<li>Developed an algorithm for generating an endless stream of levels with varying properties.</li>
+											<li>Combined pseudorandom hex and track generation with constraints that keep the frequency of each track type within defined ranges and ensure every level can be completed.</li>
+											<li>Made levels progressively more difficult by introducing new terrain types and elevations, while adjusting the frequency and types of available tracks.</li>
+										</ul>
+									</div>
+									<img class="contribution-image" src="../images/TrainFormation_Gif2.gif" alt="TrainFormation procedurally generated levels and railway tracks" loading="lazy" />
+								</section>
+							</div>
 						</section>
 					</div>
 				</main>

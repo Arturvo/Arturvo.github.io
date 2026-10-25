@@ -51,9 +51,41 @@
 						</header>
 						<section class="game-contributions" aria-labelledby="contributions-title">
 							<h2 id="contributions-title">Features I am most proud of</h2>
-							<p>More details coming soon.</p>
-
-							<div class="contribution-categories"></div>
+							<div class="contribution-categories">
+								<section class="contribution-category" aria-labelledby="complex-terrain-title">
+									<div class="contribution-text">
+										<h3 id="complex-terrain-title">Complex Terrain Generation</h3>
+										<ul class="contribution-list">
+											<li>Implemented a multi-step terrain generation algorithm using Marching Cubes and voxel density fields.</li>
+											<li>Developed a custom shading approach using triplanar texture projection.</li>
+											<li>Built a real-time control panel for adjusting terrain parameters and generation methods.</li>
+										</ul>
+									</div>
+									<img class="contribution-image" src="../images/MastersThesis_Gif1.gif" alt="Master's thesis terrain generation using Marching Cubes" loading="lazy" />
+								</section>
+								<section class="contribution-category" aria-labelledby="generation-approaches-title">
+									<div class="contribution-text">
+										<h3 id="generation-approaches-title">Exploring Different Approaches</h3>
+										<ul class="contribution-list">
+											<li>Implemented multiple terrain generation approaches, including CPU-only processing, multithreading, combined CPU and GPU processing, and approaches running almost entirely on the GPU.</li>
+											<li>Created builds using DirectX, OpenGL, and Vulkan to compare performance across graphics APIs.</li>
+											<li>Explored rendering engine features such as indirect rendering, alongside different shading and optimization techniques.</li>
+											<li>Added parameters to control terrain size, quality, and other properties, allowing me to examine how each affects the final result.</li>
+										</ul>
+									</div>
+									<img class="contribution-image" src="../images/MastersThesis_Screenshot1.jpg" alt="Master's thesis terrain generation approaches and settings" loading="lazy" />
+								</section>
+								<section class="contribution-category" aria-labelledby="performance-testing-title">
+									<div class="contribution-text">
+										<h3 id="performance-testing-title">Extensive Performance Testing</h3>
+										<ul class="contribution-list">
+											<li>Implemented a performance testing tool that automatically runs hundreds of terrain generation passes with different parameters.</li>
+											<li>Exported test results to an Excel spreadsheet, ready for analysis and inclusion in my master's thesis.</li>
+										</ul>
+									</div>
+									<img class="contribution-image" src="../images/MastersThesis_Gif2.gif" alt="Master's thesis automated terrain generation performance testing" loading="lazy" />
+								</section>
+							</div>
 						</section>
 					</div>
 				</main>
